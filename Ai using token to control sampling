@@ -1,0 +1,13 @@
+samplers are the worst thing in the whole transformers logic, because they literary randomize the results of any llm, introducing chaos. they make it more creative, but less predictable.
+
+Let's say we look for some quotation in text. Model "finds" similar stuff and starts reproducing it. However, then every produced token is still sampled from probable ones with temperature thingie. For example we have a word "Said" in the quote, in the probs we also get "Asked", because it's a related token. And.. due to sampler we just randomly put "Asked" instead of "said". Suddenly, the quotation it was printing starts resembling to a *different* phrase more than to original. And the whole path goes the other way.
+
+What we need to do, is to add special tokens to llm, that would give it a way to control the samplers' behavior. 
+
+for example a token that disables the sampler and one to enable it back. (the simplest option). 
+
+Then, LLM could actually learn to change the sampling mode and could produce much more predictable results, keeping its creativity when it's not critical.
+
+Of course the training would need to be amended to support this, but it's a very minor fix.
+
+Easy.
