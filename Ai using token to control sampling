@@ -10,4 +10,6 @@ Then, LLM could actually learn to change the sampling mode and could produce muc
 
 Of course the training would need to be amended to support this, but it's a very minor fix.
 
+Basically, as it creates correlation between the patten llm processes and the sampling method, it makes it be *intelligent sampling*, which is a keystone that current transformers lack.
+
 Easy.
