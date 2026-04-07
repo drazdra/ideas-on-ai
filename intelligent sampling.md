@@ -1,15 +1,15 @@
-samplers are the worst thing in the whole transformers logic, because they literary randomize the results of any llm, introducing chaos. they make it more creative, but less predictable.
+I was thinking here about sampling, and here my suggestion :).
+Intro
+Samplers are the "non-ai" part of the ai, that uses pure chance and math to finish the inference, sampling literally adds rendomness to the results of any llm, making results more creative and less prone to loops, but less predictable.
+However, a lot of hallucinations in models come from the samplers.
+Example
+Let's say we look for some quotation in text. Model starts reproducing a similar pattern. However, every produced token is still sampled from the list probable ones. 
 
-Let's say we look for some quotation in text. Model "finds" similar stuff and starts reproducing it. However, then every produced token is still sampled from probable ones with temperature thingie. For example we have a word "Said" in the quote, in the probs we also get "Asked", because it's a related token. And.. due to sampler we just randomly put "Asked" instead of "said". Suddenly, the quotation it was printing starts resembling to a *different* phrase more than to original. And the whole path goes the other way.
-
-What we need to do, is to add special tokens to llm, that would give it a way to control the samplers' behavior. 
-
-for example a token that disables the sampler and one to enable it back. (the simplest option). 
-
-Then, LLM could actually learn to change the sampling mode and could produce much more predictable results, keeping its creativity when it's not critical.
-
-Of course the training would need to be amended to support this, but it's a very minor fix.
-
-Basically, as it creates correlation between the patten llm processes and the sampling method, it makes it be *intelligent sampling*, which is a keystone that current transformers lack.
-
-Easy.
+Say, we have a token "Said" in the quote, in the probs list we also token "Asked", because it's a quite related token to the "talking". And.. due to sampler we may just randomly choose "Asked" instead of "Said". Suddenly,, the quotation it was printing starts resembling more to a different phrase, than it is to the original it was printing. And the whole inference path goes the other way.
+Solution
+What we need to do, is to add special tokens to llm, that would give it a way to control the samplers' behavior.
+For example: a token that disables the sampler (so we take the top option) and another one that enables it back. (it's the simplest option for the example, of course we could teach it more tricks).
+Then, LLM could actually *learn* to change the sampling mode and could produce much more predictable results, keeping its creativity when it's not critical. 
+It's an elegant way to create *intelligent* sampling, because we literary create correlation between the processed pattern and the sampler method being used.
+Of course, the training would need to be amended to support this, but it's a very minor fix.
+It makes sampling be intelligent sampling, which is a keystone that current transformers lack.
