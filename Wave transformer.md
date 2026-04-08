@@ -60,5 +60,3 @@ To be honest, the whole thing becomes very simple, when you realize that the who
 
 
 https://discord.com/channels/1128867683291627614/1464814269479780458/1491459149266030692
-i also think that this resolves one of my previous problems i was thinking about
-regarding the infereced pattern refining.
