@@ -32,6 +32,8 @@ We could think of it as the "error correction" if you wish, but in fact it's a m
 
 If we tokenize the attention and then train it upon attention, it will work not as *text elements distribution* but as *meaning distribution* decomposition. 
 
+(My earlier much more detailed take on it here: https://github.com/drazdra/UNN?tab=readme-ov-file#0-turning-animal-consciousness-into-agi but there is no mechanism for dynamic self regulation, which this piece finally closes)
+
 We can finally free the space of meanings from the statistical noise of the underlying text representation that plagues modern transformers.
 
 It's a way to create semantically *sound* picture, if you wish ;).
