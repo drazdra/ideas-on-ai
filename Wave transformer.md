@@ -30,7 +30,7 @@ The thing is, that the same approach could be applied already to a trained regul
 
 We could think of it as the "error correction" if you wish, but in fact it's a much deeper thing.
 
-If we tokenize the attention and then train it upon attention, it will work as *elements distribution* but as *meaning distribution* decomposition. 
+If we tokenize the attention and then train it upon attention, it will work not as *text elements distribution* but as *meaning distribution* decomposition. 
 
 We can finally free the space of meanings from the statistical noise of the underlying text representation that plagues modern transformers.
 
