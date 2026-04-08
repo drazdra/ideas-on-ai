@@ -10,7 +10,7 @@ We can record every token as its frequency in the global datasets of training, n
 
 (We can further develop this idea for domain specific texts, etc, making it multi-dimensional wave (lol, polarization angle), and so on, but here it's just the concept, so we will skip it)
 
-Then we convert every text into a list of positions and frequency amplitude value of the used token.
+Then we convert every text into a list of positions and frequency amplitude values of the used tokens.
 
 Then we represent any text as a complex wave and convert any input data into sets of decomposed frequencies with Fourier.
 
