@@ -2,7 +2,9 @@ Wave transformer.
 
 The idea is a bit raw as i just have invented it, but the core is here. 
 
-The main beauty of it is seeing the whole corpus of human texts as a big complex *wave* (with the both text and semantic layers).
+The main beauty of it is seeing the whole corpus of human data as a big complex *wave* (with the both text and semantic layers), which opens an easy way to detect the threshhold level for adaptation and the methods to do it.
+
+#### Just the intro..
 
 For a start, we need to take the text and represent it as a set of frequencies. 
 
@@ -26,7 +28,7 @@ This actually makes transformer closer to an analog nature of our mind's way to 
 
 But that's not the main advantage of the approach, it was actually a start and doesn't even scratch the surface. We could even totally skip doing that :).
 
-####Most important application
+#### Most important application
 
 The thing is, that the same approach could be applied already to a trained regular transformer's attention as a *second level function* refining the results.
 
@@ -44,7 +46,7 @@ It can be applied to literary harmonize the result and catch anything being in d
 
 Please, note, it doesn't mean it should sacrifice all of the dissonant notes, as sometimes dissonance is a part of a complex pattern when the wave transitions to a new shape. 
 
-####The next level capability for self adaptation in a dynamic system
+#### The next level capability for self adaptation in a dynamic system
 
 To resolve this we can just add a sliding window for harmonization and introduce the threshhold level for re-decomposition to kick in. 
 
