@@ -26,6 +26,8 @@ This actually makes transformer closer to an analog nature of our mind's way to 
 
 But that's not the main advantage of the approach, it was actually a start and doesn't even scratch the surface. We could even totally skip doing that :).
 
+####Most important application
+
 The thing is, that the same approach could be applied already to a trained regular transformer's attention as a *second level function* refining the results.
 
 We could think of it as the "error correction" if you wish, but in fact it's a much deeper thing.
@@ -42,7 +44,11 @@ It can be applied to literary harmonize the result and catch anything being in d
 
 Please, note, it doesn't mean it should sacrifice all of the dissonant notes, as sometimes dissonance is a part of a complex pattern when the wave transitions to a new shape. 
 
-To resolve this we can just add a sliding window for harmonization and introduce the threshhold level for re-decomposition to kick in. That is, we can literally detect the change of the semantics by merely detecting the level of similarity between the existing decompomposed waves to the current window.
+####The next level capability for self adaptation in a dynamic system
+
+To resolve this we can just add a sliding window for harmonization and introduce the threshhold level for re-decomposition to kick in. 
+
+That is, we can literally detect the change of the semantics by merely detecting the level of similarity between the existing decompomposed waves to the current window.
 
 Sigh, well.. this is actually a dynamic adaptive system now that can reflect its own state of adequacy and rebase its approach based on it dynamically..
 
