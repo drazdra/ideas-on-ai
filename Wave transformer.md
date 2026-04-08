@@ -7,7 +7,8 @@ The main beauty of it is seeing the whole corpus of human texts as a big complex
 For a start, we need to take the text and represent it as a set of frequencies. 
 
 We can record every token as its frequency in the global datasets of training, not just as a random ID. Of course we need to ensure our token values are unique at that.
-(Of course we can further develop this idea for domain specific texts, etc, making it multi-dimensional wave (lol, polarization angle), and so on, but here it's just the concept, so we will skip it)
+
+(We can further develop this idea for domain specific texts, etc, making it multi-dimensional wave (lol, polarization angle), and so on, but here it's just the concept, so we will skip it)
 
 Then we convert every text into a list of positions and frequency amplitude value of the used token.
 
