@@ -17,6 +17,7 @@ Then we represent any text as a complex wave and convert any input data into set
 And then we feed transformers learning with a set of lists of decomposed waves values, instead of a single monolithic text pattern. 
 
 This way, when we train, we significantly ease the life of transformers by giving it a way to learn to react to the decomposed pattern structure, instead of an actual single very complex pattern. 
+
 Of course we do not get rid of the attention. we just feed attention with a set of decomposed waves, instead of a single flow of text. The benefit is that it also may use way less memory per each wave, then it does trying to process the text right now.
 
 We basically see the whole human text function as a sum of harmonics. 
@@ -26,11 +27,13 @@ This actually makes transformer closer to an analog nature of our mind's way to 
 But that's not the main advantage of the approach, it was actually a start and doesn't even scratch the surface. We could even totally skip doing that :).
 
 The thing is, that the same approach could be applied already to a trained regular transformer's attention as a *second level function* refining the results.
+
 We could think of it as the "error correction" if you wish, but in fact it's a much deeper thing.
 
 If we tokenize the attention and then train it upon attention, it will work as *elements distribution* but as *meaning distribution* decomposition. 
 
 We can finally free the space of meanings from the statistical noise of the underlying text representation that plagues modern transformers.
+
 It's a way to create semantically *sound* picture, if you wish ;).
 
 It can be applied to literary harmonize the result and catch anything being in dissonance.
