@@ -8,7 +8,7 @@ The goal here is to find the model's abstractions (vectors related through funct
 
 Basically, it's just a list of the associations it has in its mind.
 
-As vocabulary can be match between tokens, we have a "screen" for overlaying our projections now. We can simply compare the token lists.
+As vocabulary can be very similar between tokens, we have a "screen" for overlaying our projections now. We can simply compare the token lists.
 
 That is, if we take two llms and do that, we have a very interesting space for experiments. 
 
@@ -22,7 +22,7 @@ Or, we can just strengthen the relations found in both models, thus decreasing t
 
 It's a filter using the resonance power between two models. 
 
-What we do here, is making generation SNR higher, which is what we all need :).
+What we do here, is making the SNR of our generation higher, which is what we all need :).
 
 How to add it? We would need to use the target model's embedding for the desired token and to mix it with last token prediction. 
 
