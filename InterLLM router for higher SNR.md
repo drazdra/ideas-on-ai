@@ -8,7 +8,7 @@ The goal here is to find the model's abstractions (vectors related through funct
 
 Basically, it's just a list of the associations it has in its mind.
 
-As vocabulary can be very similar between tokens, we have a "screen" for overlaying our projections now. We can simply compare the token lists.
+As vocabulary can be very similar between tokens, we have a "screen" for overlaying our projections now. We can simply compare the token lists. If not, we can use a simple vocab mapping, it's not a problem.
 
 That is, if we take two llms and do that, we have a very interesting space for experiments. 
 
